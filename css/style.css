@@ -6,16 +6,21 @@
     box-sizing: border-box;
   }
 
+  html {
+    display: flex;
+  }
+
   body {
-    overflow-yx: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   /* Header */
   header {
     background-color: #333;
     padding: 20px;
-    
-   
+   width: 100%;
+  
 }
  
   /* Rally logo */
@@ -33,9 +38,10 @@ margin-left: 200px;
 
 .left-content {
   flex: 1;
-  margin-left: 250px;
-display: flex;
+  margin-left: 150px;
+display: inline-flex;
 flex-direction: column;
+flex-wrap: wrap;
 
 }
 
@@ -45,6 +51,7 @@ input {
   padding: 10px;
 border: none;
 border-bottom: 2px solid black;
+flex-direction: column;
 /* margin-left: 120px; */
   
 }
@@ -56,7 +63,9 @@ border-bottom: 2px solid black;
   background-color: #f26c32;
   padding-left: 150px;
  margin-bottom: 30px;
- padding-right: 5px;
+ margin-right: 100%x;
+ flex-wrap: wrap;
+ 
   
 }
 
@@ -74,7 +83,7 @@ p {
 margin-top: 250px;
   width: 508px;
   margin-bottom: 100px; 
-  margin-right: 180px;
+  margin-right: 100%;
   
 }
 
